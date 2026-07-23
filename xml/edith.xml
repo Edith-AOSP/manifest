@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="edith"
+           fetch="https://github.com/Edith-AOSP"
+           revision="17.0" />
+
+    <remote  name="xdroid"
+           fetch="https://github.com/xdroid-oss"
+           revision="z0" />
+
+  <!-- Root -->
+  <project path="bionic" name="bionic" remote="edith" />
+
+  <project path="build/make" name="build_make" remote="edith" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="build_soong" remote="edith" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="bootable/deprecated-ota" name="bootable_deprecated-ota" remote="edith" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="edith" />
+  <project path="manifest" name="manifest" remote="edith" />
+
+  <!-- Device -->
+  <project path="device/edith/sepolicy" name="device_edith_sepolicy" remote="edith" />
+
+  <!-- External -->
+  <project path="external/bouncycastle" name="external_bouncycastle" remote="edith" />
+
+  <!-- Framework -->
+  <project path="frameworks/av" name="frameworks_av" remote="edith" />
+  <project path="frameworks/base" name="frameworks_base" remote="edith" />
+  <project path="frameworks/native" name="frameworks_native" remote="edith" />
+  <project path="frameworks/hardware/interfaces" name="frameworks_hardware_interfaces" remote="edith" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="edith" />
+
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="edith" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="edith" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="edith" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="edith" />
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="edith" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="edith" />
+
+  <!-- System -->
+  <project path="system/core" name="system_core" remote="edith" />
+  <project path="system/fs/fs_mgr" name="system_fs_fs_mgr" remote="edith" />
+  <project path="system/tools/hidl" name="system_tools_hidl" remote="edith" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="edith" />
+  <project path="system/update_engine" name="system_update_engine" remote="edith" />
+
+  <!-- Vendor -->
+  <project path="vendor/edith" name="vendor_edith" remote="edith" />
+  <project path="vendor/edithui" name="vendor_edithui" remote="edith" />
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="edith" />
+
+  <!-- GMS -->
+  <project path="vendor/gms" name="vendor_gms" remote="xdroid" />
+
+</manifest>

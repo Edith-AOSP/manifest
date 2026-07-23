@@ -1,0 +1,24 @@
+# Edith-AOSP
+
+## Building Edith-AOSP
+
+### Requirements
+- A working brain.
+- Decent machine to compile Android.
+- Knowledge of building Android. [Learn More](https://source.android.com/docs/setup/build/building)
+
+### Downloading Edith-AOSP source code
+```
+repo init -u https://github.com/Edith-AOSP/manifest -b 17.0 --git-lfs
+```
+```
+repo sync -j$(nproc --all) --force-sync
+```
+
+### Building Edith-AOSP
+
+```bash
+. build/envsetup.sh
+lunch edith_$device-cp2a-userdebug
+mka edith -j$(nproc --all)
+```
