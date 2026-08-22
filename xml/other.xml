@@ -21,7 +21,6 @@
   <project path="external/dtc" name="android_external_dtc" remote="lineage" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="lineage" />
   <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" revision="lineage-23.2" />
-  <project path="external/google-fonts/google-sans-flex" name="android_external_google-fonts_google-sans-flex" remote="lineage" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="lineage" />
   <project path="external/libjxl" name="android_external_libjxl" remote="lineage" />
   <project path="external/libncurses" name="android_external_libncurses" remote="lineage" revision="lineage-23.2" />
