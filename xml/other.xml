@@ -11,9 +11,6 @@
   <!-- Device -->
   <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="lineage" />
 
-  <!-- Framework -->
-  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="lineage" />
-
   <!-- External -->
   <project path="external/avb" name="android_external_avb" remote="lineage" />
   <project path="external/bash" name="android_external_bash" remote="lineage" revision="lineage-23.2" />

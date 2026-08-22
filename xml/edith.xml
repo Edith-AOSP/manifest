@@ -43,6 +43,7 @@
   <project path="frameworks/native" name="frameworks_native" remote="edith" />
   <project path="frameworks/hardware/interfaces" name="frameworks_hardware_interfaces" remote="edith" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="edith" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="edith" />
 
   <!-- Hardware -->
   <project path="hardware/interfaces" name="hardware_interfaces" remote="edith" />
@@ -53,6 +54,10 @@
   <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="edith" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="edith" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="edith" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="edith" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="edith" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="edith" />
+
 
   <!-- System -->
   <project path="system/core" name="system_core" remote="edith" />
@@ -64,7 +69,7 @@
   <!-- Vendor -->
   <project path="vendor/edith" name="vendor_edith" remote="edith" />
   <project path="vendor/edithui" name="vendor_edithui" remote="edith" />
-  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="edith" />
+  <project path="vendor/edith-preference" name="vendor_edith-preference" remote="edith" />
 
   <!-- GMS -->
   <project path="vendor/gms" name="vendor_gms" remote="xdroid" />
