@@ -10,8 +10,6 @@
            revision="z0" />
 
   <!-- Root -->
-  <project path="bionic" name="bionic" remote="edith" />
-
   <project path="build/make" name="build_make" remote="edith" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -27,6 +25,8 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <project path="art" name="art" remote="edith" />
+  <project path="bionic" name="bionic" remote="edith" />
   <project path="bootable/deprecated-ota" name="bootable_deprecated-ota" remote="edith" />
   <project path="bootable/recovery" name="bootable_recovery" remote="edith" />
   <project path="manifest" name="manifest" remote="edith" />
@@ -41,30 +41,42 @@
   <project path="frameworks/av" name="frameworks_av" remote="edith" />
   <project path="frameworks/base" name="frameworks_base" remote="edith" />
   <project path="frameworks/native" name="frameworks_native" remote="edith" />
-  <project path="frameworks/hardware/interfaces" name="frameworks_hardware_interfaces" remote="edith" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="edith" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="edith" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="edith" />
 
   <!-- Hardware -->
   <project path="hardware/interfaces" name="hardware_interfaces" remote="edith" />
-  <project path="hardware/libhardware" name="hardware_libhardware" remote="edith" />
 
   <!-- Packages -->
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="edith" />
-  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="edith" />
-  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="edith" />
-  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="edith" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="edith" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="edith" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="edith" />
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="edith" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="edith" />
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="edith" />
 
+  <!-- Packages Modules -->
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="edith" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="edith" />
+
+  <!-- Packages Providers -->
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="edith" />
+
+  <!-- Packages Services -->
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="edith" />
 
   <!-- System -->
   <project path="system/core" name="system_core" remote="edith" />
   <project path="system/fs/fs_mgr" name="system_fs_fs_mgr" remote="edith" />
-  <project path="system/tools/hidl" name="system_tools_hidl" remote="edith" />
+  <project path="system/libziparchive" name="system_libziparchive" remote="edith" />
+  <project path="system/logging" name="system_logging" remote="edith" />
+  <project path="system/media" name="system_media" remote="edith" />
+  <project path="system/memory/libmeminfo" name="system_memory_libmeminfo" remote="edith" />
+  <project path="system/netd" name="system_netd" remote="edith" />
+  <project path="system/security" name="system_security" remote="edith" />
   <project path="system/sepolicy" name="system_sepolicy" remote="edith" />
   <project path="system/update_engine" name="system_update_engine" remote="edith" />
+  <project path="system/vold" name="system_vold" remote="edith" />
 
   <!-- Vendor -->
   <project path="vendor/edith" name="vendor_edith" remote="edith" />

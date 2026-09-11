@@ -3,7 +3,7 @@
 ## Building Edith-AOSP
 
 ### Requirements
-- A working brain.
+- A functional brain.
 - Decent machine to compile Android.
 - Knowledge of building Android. [Learn More](https://source.android.com/docs/setup/build/building)
 
