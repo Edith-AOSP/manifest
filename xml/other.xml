@@ -38,6 +38,9 @@
   <project path="external/vim" name="android_external_vim" remote="lineage" />
   <project path="external/zstd" name="android_external_zstd" remote="lineage" />
 
+  <!-- Development -->
+  <project path="development" name="android_development" remote="lineage" />
+
   <!-- Hardware -->
   <project path="hardware/google/pixel" name="android_hardware_google_pixel" remote="lineage" />
   <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" remote="lineage" />
