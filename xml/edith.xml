@@ -50,6 +50,7 @@
   <project path="hardware/interfaces" name="hardware_interfaces" remote="edith" />
 
   <!-- Packages -->
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="edith" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="edith" />
   <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="edith" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="edith" />
