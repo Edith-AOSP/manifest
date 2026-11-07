@@ -52,7 +52,7 @@
   <!-- Packages -->
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="edith" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="edith" />
-  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="edith" />
+  <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="edith" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="edith" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="edith" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="edith" />
